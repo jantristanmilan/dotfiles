@@ -1,0 +1,8 @@
+code --install-extension alefragnani.project-manager
+code --install-extension dracula-theme.theme-dracula
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.debugpy
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension tobias-z.vscode-harpoon
+code --install-extension vscodevim.vim

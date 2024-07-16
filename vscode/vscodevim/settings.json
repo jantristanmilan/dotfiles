@@ -1,5 +1,9 @@
+/*
+ * VSCode settings.json
+ */
 {
     "workbench.colorTheme": "Dracula",
+    "keyboard.dispatch": "keyCode",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
@@ -12,17 +16,10 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        // Recommended vscodevim README hotkeys
         {
             "before": ["<leader>", "d"],
             "after": ["d", "d"]
-        },
-        {
-            "before": ["<C-u>"],
-            "after": ["<C-u>", "z", "z"]
-        },
-        {
-            "before": ["<C-d>"],
-            "after": ["<C-d>", "z", "z"]
         },
         {
             "before": ["<C-n>"],
@@ -33,6 +30,16 @@
             "commands": ["lineBreakInsert"],
             "silent": true
         },
+        // Vertical movement
+        {
+            "before": ["<C-u>"],
+            "after": ["<C-u>", "z", "z"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["<C-d>", "z", "z"]
+        },
+        // Telescope
         {
             "before": ["<leader>", "<leader>"],
             "after": [],
@@ -43,6 +50,20 @@
                 }
             ]
         },
+        // Window management
+        {
+            "before": ["<leader>", "w", "w"],
+            "after": ["<C-w>", "w"]
+        },
+        {
+            "before": ["<leader>", "w", "|"],
+            "after": ["<C-w>", "v"]
+        },
+        {
+            "before": ["<leader>", "w", "d"],
+            "after": ["<C-w>", "c"]
+        },
+        // Harpoon
         {
             "before": ["<leader>", "a"],
             "commands": ["vscode-harpoon.addEditor"]
@@ -58,7 +79,39 @@
         {
             "before": ["<leader>", "1"],
             "commands": ["vscode-harpoon.gotoEditor1"]
-        }
+        },
+        {
+            "before": ["<leader>", "2"],
+            "commands": ["vscode-harpoon.gotoEditor2"]
+        },
+        {
+            "before": ["<leader>", "3"],
+            "commands": ["vscode-harpoon.gotoEditor3"]
+        },
+        {
+            "before": ["<leader>", "4"],
+            "commands": ["vscode-harpoon.gotoEditor4"]
+        },
+        {
+            "before": ["<leader>", "5"],
+            "commands": ["vscode-harpoon.gotoEditor5"]
+        },
+        {
+            "before": ["<leader>", "6"],
+            "commands": ["vscode-harpoon.gotoEditor6"]
+        },
+        {
+            "before": ["<leader>", "7"],
+            "commands": ["vscode-harpoon.gotoEditor7"]
+        },
+        {
+            "before": ["<leader>", "8"],
+            "commands": ["vscode-harpoon.gotoEditor8"]
+        },
+        {
+            "before": ["<leader>", "9"],
+            "commands": ["vscode-harpoon.gotoEditor9"]
+        },
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
@@ -70,7 +123,5 @@
     },
     "vim.smartRelativeLine": true,
     "editor.lineNumbers": "relative",
-    "vim.insertModeKeyBindingsNonRecursive": [
-        
-    ]
+    "vim.insertModeKeyBindingsNonRecursive": [],
 }
